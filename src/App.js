@@ -7,7 +7,7 @@ function App() {
   // Function to fetch data from the server
   const fetchData = async () => {
     try {
-      const response = await fetch('https://calm-gray-fish-kit.cyclic.app/api/data');
+      const response = await fetch('https://wild-cyan-bream.cyclic.app/api/data');
       const jsonData = await response.json();
 
       // Update state with the fetched data
