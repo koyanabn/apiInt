@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div>
-      <h1>API trial using cyclic and Netlify</h1>
+      <h1>API trial using cyclic(backend) and Netlify(frontend)</h1>
       <button onClick={fetchData}>Fetch Data</button>
       {/* function call to fetch data */}
       {data && (
