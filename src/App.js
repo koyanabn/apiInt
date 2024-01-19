@@ -7,7 +7,8 @@ function App() {
 
   const fetchData = async () => { //function to fetch data from the server
     try {
-      const response = await fetch('https://wild-cyan-bream.cyclic.app/koyana');
+      // const response = await fetch('https://wild-cyan-bream.cyclic.app/koyana');
+      const response = await fetch('https://ill-plum-frog-robe.cyclic.app/api/yash');
       //fetch starts a request and returns a promise
       //if the request gets completed, the promise is resolved with the Response object
       //if the request fails, the promise is rejected.
