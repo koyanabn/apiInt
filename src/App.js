@@ -49,7 +49,7 @@ function App() {
           Convert a JavaScript object into a string with JSON.stringify(). */}
         </div>
       )}
-      <div id="chartDiv" style="width:50%; height:300px; margin:0 auto;"></div>
+      {/*<div id="chartDiv" style="width:50%; height:300px; margin:0 auto;"></div>*/}
     </div>
   );
 }
