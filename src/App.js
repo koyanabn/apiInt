@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; //react hook, allows us to track state in a function component
-import { chartDiv } from './chart.js';
+//import { chartDiv } from './chart.js';
 
 function App() {
   // State to store the fetched data
