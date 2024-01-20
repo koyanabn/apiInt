@@ -20,11 +20,26 @@ function App() {
       console.error('Error fetching data:', error); //if it gets error, the error will be handled here
     }
   };
+  const fetchGraphData = async () => { //function to fetch data from the server
+    try {
+      const response = await fetch('https://wild-cyan-bream.cyclic.app/api/koyana');
+      // const response = await fetch('https://ill-plum-frog-robe.cyclic.app/api/yash');
+      //fetch starts a request and returns a promise
+      //if the request gets completed, the promise is resolved with the Response object
+      //if the request fails, the promise is rejected.
+      const jsonGraphData = await response.json(); //returns a promise resolved to a JSON object
+
+      setData(jsonGraphData); //update state with the fetched data
+    } catch (error) {
+      console.error('Error fetching data:', error); //if it gets error, the error will be handled here
+    }
+  };
 
   return (
     <div>
       <h1>API trial using cyclic(backend) and Netlify(frontend)</h1>
       <button onClick={fetchData}>Fetch Data</button>
+      <button onClick = {fetchGraphData}>Fetch Graph Data</button>
       {/* function call to fetch data */}
       {data && (
         <div>
@@ -40,4 +55,5 @@ function App() {
 }
 
 export default App;
+// export default chart;
 // it's used to export functions, objects, classes or expressions from script files or modules
