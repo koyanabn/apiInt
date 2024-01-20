@@ -1,11 +1,11 @@
-JSC.Chart('chartDiv', {
+const chart = new JSC.Chart("chartDiv", {
     type: 'horizontal column',
-   series: [
-      {
-         points: [
-            {x: 'Apples', y: 50},
-            {x: 'Oranges', y: 42}
-         ]
-      }
-   ]
+    series: [
+        {
+            points: [
+                {x: 'Apples', y: 50},
+                {x: 'Oranges', y: 42}
+            ]
+        }
+    ]
 });
