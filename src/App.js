@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; //react hook, allows us to track state in a function component
+import { chartDiv } from './chart.js';
 
 function App() {
   // State to store the fetched data
@@ -7,8 +8,8 @@ function App() {
 
   const fetchData = async () => { //function to fetch data from the server
     try {
-      // const response = await fetch('https://wild-cyan-bream.cyclic.app/koyana');
-      const response = await fetch('https://ill-plum-frog-robe.cyclic.app/api/yash');
+      const response = await fetch('https://wild-cyan-bream.cyclic.app/koyana');
+      // const response = await fetch('https://ill-plum-frog-robe.cyclic.app/api/yash');
       //fetch starts a request and returns a promise
       //if the request gets completed, the promise is resolved with the Response object
       //if the request fails, the promise is rejected.
@@ -33,6 +34,7 @@ function App() {
           Convert a JavaScript object into a string with JSON.stringify(). */}
         </div>
       )}
+      <div id="chartDiv" style="width:50%; height:300px; margin:0 auto;"></div>
     </div>
   );
 }
